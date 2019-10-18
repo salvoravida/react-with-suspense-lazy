@@ -19,7 +19,7 @@ function withSuspense(LazyComp, Loading) {
 }
 
 function withSuspenseLazy(ctor, Loading) {
-    return withSuspense(React.lazy(ctor, Loading));
+    return withSuspense(React.lazy(ctor), Loading);
 }
 
 exports.withSuspense = withSuspense;

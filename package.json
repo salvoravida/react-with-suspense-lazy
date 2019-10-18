@@ -1,6 +1,6 @@
 {
   "name": "react-with-suspense-lazy",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "react-with-suspense-lazy",
   "main": "dist/index.js",
   "engines": {
