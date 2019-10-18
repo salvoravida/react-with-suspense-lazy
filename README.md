@@ -26,7 +26,7 @@ import { withSuspenceLazy } from 'react-with-suspence-lazy'
 export const MyComponent = withSuspenceLazy(() => import('./MyComponent'));
 ```
 
-with loading fallback like spinners, etc...suspence
+with loading fallback like spinners, etc...
 
 ```javascript
 import { withSuspenceLazy } from 'react-with-suspence-lazy'
