@@ -1,9 +1,9 @@
 import React from 'react';
 
-export function withSuspence(LazyComp) {
+export function withSuspence(LazyComp, Loading) {
     function WithSuspence(props) {
         return (
-          <React.Suspense fallback={null}>
+          <React.Suspense fallback={Loading ? <Loading /> : null}>
               <LazyComp {...props} />
             </React.Suspense>
         );
@@ -14,6 +14,6 @@ export function withSuspence(LazyComp) {
     return WithSuspence;
 }
 
-export function withSuspenceLazy(ctor) {
-    return withSuspence(React.lazy(ctor));
+export function withSuspenceLazy(ctor, Loading) {
+    return withSuspence(React.lazy(ctor, Loading));
 }
