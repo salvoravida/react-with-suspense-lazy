@@ -1,19 +1,19 @@
 import React from 'react';
 
-export function withSuspence(LazyComp, Loading) {
-    function WithSuspence(props) {
+export function withSuspense(LazyComp, Loading) {
+    function WithSuspense(props) {
         return (
           <React.Suspense fallback={Loading ? <Loading /> : null}>
               <LazyComp {...props} />
             </React.Suspense>
         );
     }
-    WithSuspence.displayName = `WithSuspence(${LazyComp.displayName
+    WithSuspense.displayName = `WithSuspense(${LazyComp.displayName
     || LazyComp.name
     || 'Component'})`;
-    return WithSuspence;
+    return WithSuspense;
 }
 
-export function withSuspenceLazy(ctor, Loading) {
-    return withSuspence(React.lazy(ctor, Loading));
+export function withSuspenseLazy(ctor, Loading) {
+    return WithSuspense(React.lazy(ctor, Loading));
 }

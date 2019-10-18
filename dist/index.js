@@ -6,21 +6,21 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var React = _interopDefault(require('react'));
 
-function withSuspence(LazyComp, Loading) {
-    function WithSuspence(props) {
+function withSuspense(LazyComp, Loading) {
+    function WithSuspense(props) {
         return React.createElement(
             React.Suspense,
             { fallback: Loading ? React.createElement(Loading, null) : null },
             React.createElement(LazyComp, props)
         );
     }
-    WithSuspence.displayName = 'WithSuspence(' + (LazyComp.displayName || LazyComp.name || 'Component') + ')';
-    return WithSuspence;
+    WithSuspense.displayName = 'WithSuspense(' + (LazyComp.displayName || LazyComp.name || 'Component') + ')';
+    return WithSuspense;
 }
 
-function withSuspenceLazy(ctor, Loading) {
-    return withSuspence(React.lazy(ctor, Loading));
+function withSuspenseLazy(ctor, Loading) {
+    return WithSuspense(React.lazy(ctor, Loading));
 }
 
-exports.withSuspence = withSuspence;
-exports.withSuspenceLazy = withSuspenceLazy;
+exports.withSuspense = withSuspense;
+exports.withSuspenseLazy = withSuspenseLazy;

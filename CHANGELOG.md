@@ -1,1 +1,1 @@
-react-with-suspence-lazy
+react-with-suspense-lazy
