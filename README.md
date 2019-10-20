@@ -34,3 +34,16 @@ import Loading from './Loading';
 
 export const MyComponent = withSuspenseLazy(() => import('./MyComponent'), Loading);
 ```
+
+# Feedback
+
+Let me know what do you think about! <br>
+*Enjoy it? Star this project!* :D
+
+Contributors
+------------
+See [Contributors](https://github.com/salvoravida/react-with-suspense-lazy/graphs/contributors).
+
+License
+-------
+[MIT License](https://github.com/salvoravida/react-with-suspense-lazy/blob/master/LICENSE.md).
