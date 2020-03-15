@@ -36,12 +36,13 @@
     "react": "^16.10.2"
   },
   "devDependencies": {
-    "@babel/cli": "7.6.4",
-    "@babel/core": "7.6.4",
-    "@babel/preset-env": "7.6.3",
-    "@babel/preset-react": "7.6.3",
-    "react": "16.10.2",
-    "rollup": "1.25.0",
-    "rollup-plugin-babel": "4.3.3"
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.7",
+    "@babel/preset-env": "7.8.7",
+    "@babel/preset-react": "7.8.3",
+    "@salvoravida/eslint-config": "0.0.4",
+    "react": "16.13.0",
+    "rollup": "2.0.6",
+    "rollup-plugin-babel": "4.4.0"
   }
 }
